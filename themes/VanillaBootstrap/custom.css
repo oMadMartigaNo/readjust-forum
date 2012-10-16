@@ -1,0 +1,137 @@
+/* Reset some stupid inline rule that sets a 60px padding of the body
+ ==============================================================================
+ */
+@media (max-width: 979px) {
+    body {
+        padding-top: 0 !important;
+    }
+}
+
+
+/* Fix negative margin on navbar
+ ==============================================================================
+ */
+@media (max-width: 767px) {
+    .navbar-fixed-top,
+    .navbar-fixed-bottom {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+
+/* Fix crowded button space
+ ==============================================================================
+ */
+@media (max-width: 418px) {
+    .CommentForm .Buttons {
+        padding-bottom: 3em;
+        text-align: left;
+    }
+}
+.CommentForm .Buttons span {
+    display: none;
+}
+
+
+/* Fix lack of space in top popup
+ ==============================================================================
+ */
+#Popup .Body .Content {
+    padding-top: 1.5em;
+
+}
+
+
+/* Fix max width on embedded videos
+ ==============================================================================
+ */
+.Video,
+.Video object,
+.Video object embed,
+.Video iframe,
+.youtube5container,
+.youtube5player {
+    max-width: 100%;
+}
+
+/* Fix YouTube5 inheritance bugs
+ ==============================================================================
+ */
+.youtube5progress input {
+    height: auto;
+}
+
+/* Restore list styling for message body
+ ==============================================================================
+ */
+.Message ul {
+    list-style: circle;
+}
+.Message ul,
+.Message ol {
+    margin: 0 0 1em 2em;
+}
+
+.Message ul ul,
+.Message ol ol,
+.Message ul ol,
+.Message ol ul {
+    margin-bottom: 0;
+}
+
+
+/* Add zebra rows to topics
+ ==============================================================================
+ */
+.DataList.Discussions .Item.Alt,
+.MessageList .Item.Alt {
+    background: #fcfcfc;
+}
+
+/* Make comment field a little larger
+ ==============================================================================
+ */
+.CommentForm textarea.TextBox {
+    height: 10em;
+}
+
+/* Add icon to topic titles
+ ==============================================================================
+ */
+.Item .Title:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    padding-right: 0.25em;
+    content: "\f0e5";
+}
+
+.Item.New .Title:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    padding-right: 0.25em;
+    content: "\f075";
+}
+
+/* Set custom icon to Mark all viewed link
+ ==============================================================================
+ */
+.nav li a[href="/discussions/markallviewed"]:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    padding-right: 0.5em;
+    content: "\f046";
+}
+
+div.credits.well {
+    display: none !important;
+}
