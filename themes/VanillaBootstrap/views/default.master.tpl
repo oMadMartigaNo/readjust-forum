@@ -26,10 +26,6 @@
 	
 	<script type="text/javascript" src="/themes/VanillaBootstrap/design/prettify/prettify.js"></script>
 	
-	<!-- Custom styling
-	================================================== -->
-	<link rel="stylesheet" href="/themes/VanillaBootstrap/custom.css" type="text/css" />
-	
 </head>
 <body id="{$BodyID}" class="{$BodyClass}" onload="prettyPrint()">
 	
