@@ -18,7 +18,7 @@
 </IfModule>
 
 # Protect .git directories
-<Directory .git>
-    order allow,deny
-    deny from all
-</Directory>
+<Files .git/*>
+    Order Allow,Deny
+    Deny from All
+</Files>
