@@ -132,6 +132,21 @@
     content: "\f046";
 }
 
-div.credits.well {
-    display: none !important;
+/* Fix overflow of text in profiles
+ ==============================================================================
+ */
+.Box.About dl dd {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Restyle blockquotes
+ ==============================================================================
+ */
+.Message blockquote p {
+    font-size: inherit;
+    font-weight: 300;
+    line-height: inherit;
+    color: #767676;
 }
