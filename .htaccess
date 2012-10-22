@@ -3,6 +3,10 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     
+    # Redirect to staging domain if access via subfolder URL
+    RewriteCond %{REQUEST_URI} /stage
+    RewriteRule (.*) http://stage.readjust.se/$1 [R=301,L]
+    
     # Rewrite www.domain.com -> domain.com -- used with SEO Strict URLs plugin
     RewriteCond %{HTTP_HOST} .
     RewriteCond %{HTTP_HOST} ^www\.readjust\.se [NC]
