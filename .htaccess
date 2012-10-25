@@ -3,7 +3,7 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     
-    # Rewrite www.domain.com -> domain.com -- used with SEO Strict URLs plugin
+    # Rewrite www.readjust.se -> readjust.se
     RewriteCond %{HTTP_HOST} .
     RewriteCond %{HTTP_HOST} ^www\.readjust\.se [NC]
     RewriteRule (.*) http://readjust.se/$1 [R=301,L]
