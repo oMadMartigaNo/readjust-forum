@@ -167,3 +167,12 @@
         padding: 0 12px;
     }    
 }
+
+/* Hide credits in views < 767px
+ ==============================================================================
+ */
+@media (max-width: 767px) {
+    .credits.well {
+        display: none;
+    }
+}
