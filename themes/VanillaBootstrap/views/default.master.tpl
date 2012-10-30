@@ -7,9 +7,9 @@
 	
 	<!-- LESS CSS and Prettify
 	================================================== -->
- 	
- 	<link rel="stylesheet/less" type="text/css" href="/themes/VanillaBootstrap/design/less/main.less">
- 	<link rel="stylesheet" type="text/css" href="/themes/VanillaBootstrap/design/prettify/prettify.css">
+	
+	<link rel="stylesheet/less" type="text/css" href="/themes/VanillaBootstrap/design/less/main.less">
+	<link rel="stylesheet" type="text/css" href="/themes/VanillaBootstrap/design/prettify/prettify.css">
 	
 	<!-- Javascript
 	================================================== -->
@@ -107,9 +107,6 @@
 				<div class="credits well">
 					Powered by <a target="_blank" href="http://vanillaforums.org"><b>Vanilla.</b></a>
 					Made with <a target="_blank" href="http://getbootstrap.com"><b>Bootstrap.</b></a>
-					<br>
-					Theme built by <a href="https://github.com/kasperisager"><b>Kasper Kronborg Isager</b></a>
-					<!-- Feel free to delete my name from the list, but please keep both the Vanilla and Bootstrap notices -->
 				</div>
 			</div>
 			<div class="Content span8">

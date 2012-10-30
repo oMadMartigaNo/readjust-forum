@@ -89,12 +89,14 @@
     background: #fcfcfc;
 }
 
+
 /* Make comment field a little larger
  ==============================================================================
  */
 .CommentForm textarea.TextBox {
     height: 10em;
 }
+
 
 /* Add icon to topic titles
  ==============================================================================
@@ -119,6 +121,7 @@
     content: "\f075";
 }
 
+
 /* Set custom icon to Mark all viewed link
  ==============================================================================
  */
@@ -132,6 +135,7 @@
     content: "\f046";
 }
 
+
 /* Fix overflow of text in profiles
  ==============================================================================
  */
@@ -141,6 +145,7 @@
     white-space: nowrap;
 }
 
+
 /* Restyle blockquotes
  ==============================================================================
  */
@@ -149,4 +154,33 @@
     font-weight: 300;
     line-height: inherit;
     color: #767676;
+}
+
+
+/* Kill ugly border in tag cloud
+ ==============================================================================
+ */
+.Box.Tags .PanelInfo li {
+    border-bottom: none;
+}
+
+
+/* Fix paging width on mobile devices
+ ==============================================================================
+ */
+@media (max-width: 418px) {
+    .Pager.NumberedPager a,
+    .Pager.NumberedPager span {
+        padding: 0 12px;
+    }    
+}
+
+
+/* Hide credits in views < 767px
+ ==============================================================================
+ */
+@media (max-width: 767px) {
+    .credits.well {
+        display: none;
+    }
 }
