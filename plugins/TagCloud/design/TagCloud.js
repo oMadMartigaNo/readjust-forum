@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
 		var tag_count = $(this).find('span').text();
 		var tag_ratio = tag_count/max_tag_count;
 		$(this).find('a')
-			.css('font-size', 1.5*tag_ratio+0.6+'em');
+			.css('font-size', 1.5*tag_ratio+0.8+'em');
 			//.css('line-height', 0.5);
 	});
 	
