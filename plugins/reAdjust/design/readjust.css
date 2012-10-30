@@ -157,3 +157,13 @@
 .Box.Tags .PanelInfo li {
     border-bottom: none;
 }
+
+/* Fix paging width on mobile devices
+ ==============================================================================
+ */
+@media (max-width: 418px) {
+    .Pager.NumberedPager a,
+    .Pager.NumberedPager span {
+        padding: 0 12px;
+    }    
+}
