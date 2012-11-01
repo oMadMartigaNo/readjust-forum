@@ -149,11 +149,13 @@
 /* Restyle blockquotes
  ==============================================================================
  */
+.Message blockquote {
+    color: #767676;
+}
 .Message blockquote p {
     font-size: inherit;
     font-weight: 300;
     line-height: inherit;
-    color: #767676;
 }
 
 
