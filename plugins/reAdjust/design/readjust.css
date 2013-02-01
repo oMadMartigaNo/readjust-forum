@@ -68,6 +68,9 @@
 .Message ul {
     list-style: circle;
 }
+.Message ol {
+    list-style: decimal;
+}
 .Message ul,
 .Message ol {
     margin: 0 0 1em 2em;
