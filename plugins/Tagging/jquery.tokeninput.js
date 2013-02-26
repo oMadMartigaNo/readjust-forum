@@ -66,7 +66,7 @@ $.TokenList = function (input, settings) {
     // Keys "enum"
     var KEY = {
         BACKSPACE: 8,
-        TAB: 9,
+        //TAB: 9,
         RETURN: 13,
         ESC: 27,
         LEFT: 37,
@@ -175,7 +175,7 @@ $.TokenList = function (input, settings) {
                     }
                     break;
 
-                case KEY.TAB:
+                //case KEY.TAB:
                 case KEY.RETURN:
                 case KEY.COMMA:
                 case KEY.SPACE:
