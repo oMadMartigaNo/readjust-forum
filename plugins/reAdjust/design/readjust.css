@@ -215,3 +215,44 @@ span.likes,
 .DataList.Discussions .Meta .icon-thumbs-up {
     color: #117cc0;
 }
+
+/* Fix broken login on small screens
+ ==============================================================================
+ */
+@media (max-width: 478px) {
+    #dashboard_entry_signin .container {
+        width: 100%;
+    }
+    #dashboard_entry_signin .signin {
+        width: 100%;
+    }
+    .Entry.SingleEntryMethod {
+        margin: 0 1em;
+        width: auto;
+    }
+    .Entry.SingleEntryMethod #Form_User_SignIn label[for="Form_Email"],
+    .Entry.SingleEntryMethod #Form_User_SignIn label[for="Form_Password"] {
+        display: block;
+        text-align: left;
+    }
+    .Entry.SingleEntryMethod #Form_User_SignIn label[for="SignInRememberMe"] {
+        position: static;
+    }
+    .Entry.SingleEntryMethod #Form_User_SignIn .Buttons {
+        max-width: 280px;
+    }
+    .Entry.SingleEntryMethod #Form_User_SignIn input#Form_SignIn {
+        right: 0;
+    }
+    .Entry.SingleEntryMethod #Form_User_SignIn .CreateAccount {
+        left: 0;
+        margin-top: 2em;
+    }
+    #Popup.SignInPopup .Border {
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        margin: 0;
+    }
+}
