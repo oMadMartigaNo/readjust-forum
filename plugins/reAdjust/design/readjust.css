@@ -42,6 +42,13 @@
 
 }
 
+/* Fix misaligned cancel button
+ ==============================================================================
+ */
+#DiscussionForm a.Cancel {
+    margin-top: 20px;
+}
+
 
 /* Fix max width on embedded videos
  ==============================================================================
