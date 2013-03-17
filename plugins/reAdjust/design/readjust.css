@@ -132,20 +132,6 @@
 }
 
 
-/* Set custom icon to Mark all viewed link
- ==============================================================================
- */
-.nav li a[href="/discussions/markallviewed"]:before {
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    display: inline-block;
-    text-decoration: inherit;
-    padding-right: 0.5em;
-    content: "\f046";
-}
-
-
 /* Fix overflow of text in profiles
  ==============================================================================
  */
