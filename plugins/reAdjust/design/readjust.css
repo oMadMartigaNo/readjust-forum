@@ -8,6 +8,21 @@
 }
 
 
+/* Add support for tables with borders
+ ==============================================================================
+ */
+table.borders th,
+table.borders td {
+    border: 1px solid #e0e0e0;
+    padding: 3px 8px;
+    text-align: center;
+}
+table.borders th {
+    background-color: #ececec;
+    font-weight: bold;
+}
+
+
 /* Fix negative margin on navbar
  ==============================================================================
  */
