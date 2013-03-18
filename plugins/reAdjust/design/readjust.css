@@ -80,9 +80,10 @@ table.borders th {
 .Video object,
 .Video object embed,
 .Video iframe,
+iframe,
 .youtube5container,
 .youtube5player {
-    max-width: 100%;
+    max-width: 100% !important;
 }
 
 /* Fix YouTube5 inheritance bugs
