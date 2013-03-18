@@ -7,6 +7,29 @@
     }
 }
 
+/* Add table of contents for FAQ (and hide for now)
+ ==============================================================================
+ */
+.toc-list {
+    display: none;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+/* Add support for tables with borders
+ ==============================================================================
+ */
+table.borders th,
+table.borders td {
+    border: 1px solid #e0e0e0;
+    padding: 3px 8px;
+    text-align: center;
+}
+table.borders th {
+    background-color: #ececec;
+    font-weight: bold;
+}
+
 
 /* Fix negative margin on navbar
  ==============================================================================
@@ -129,20 +152,6 @@
     text-decoration: inherit;
     padding-right: 0.25em;
     content: "\f075";
-}
-
-
-/* Set custom icon to Mark all viewed link
- ==============================================================================
- */
-.nav li a[href="/discussions/markallviewed"]:before {
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    display: inline-block;
-    text-decoration: inherit;
-    padding-right: 0.5em;
-    content: "\f046";
 }
 
 
