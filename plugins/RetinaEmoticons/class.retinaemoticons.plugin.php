@@ -66,19 +66,31 @@ class EmoticonsPlugin extends Gdn_Plugin {
 		if (!isset($EmoticonMatch)) {
 			$EmoticonMatch = array(
                 ':D'      => 'big-smile.png',
+                ':-D'     => 'big-smile.png',
                 ':O'      => 'gasp.png',
+                ':-O'     => 'gasp.png',
                 '^^'      => 'laugh.png',
+                '^_^'      => 'laugh.png',
                 '>D'      => 'mad.png',
+                '>-D'      => 'mad.png',
                 ':|'      => 'neutral.png',
+                ':-|'      => 'neutral.png',
                 ':('      => 'sad.png',
+                ':-('      => 'sad.png',
                 'o:)'     => 'saint.png',
+                'o:-)'     => 'saint.png',
                 ';D'      => 'smile-wink.png',
+                ';-D'      => 'smile-wink.png',
                 ':)'      => 'smile.png',
                 ':-)'	  => 'smile.png',
                 ':P'      => 'tounge.png',
+                ':-P'      => 'tounge.png',
                 ':/'      => 'unsure.png',
+                ':-/'      => 'unsure.png',
                 ';)'      => 'wink.png',
-                ':9'      => 'yum.png'
+                ';-)'      => 'wink.png',
+                ':9'      => 'yum.png',
+                ':-9'      => 'yum.png'
 			);
 		}
 		
