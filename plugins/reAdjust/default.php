@@ -20,13 +20,15 @@ $PluginInfo['reAdjust'] = array
 class readjustPlugin extends Gdn_Plugin {
     
     public function Base_Render_Before($Sender){
-        $Sender->AddCssFile($this->GetResource('design/readjust.css', FALSE, FALSE));
-        $Sender->AddCssFile($this->GetResource('../../themes/VanillaBootstrap/design/less/main.css', FALSE, FALSE));
-        $Sender->AddCssFile($this->GetResource('../../themes/VanillaBootstrap/design/prettify/prettify.css', FALSE, FALSE));
-        $Sender->AddJsFile($this->GetResource('../../themes/VanillaBootstrap/js/bootstrap.main.js', FALSE, FALSE));
-        $Sender->AddJsFile($this->GetResource('../../themes/VanillaBootstrap/js/plugin.autosize.js', FALSE, FALSE));
-        $Sender->AddJsFile($this->GetResource('../../themes/VanillaBootstrap/js/vanilla.main.js', FALSE, FALSE));
-        $Sender->AddJsFile($this->GetResource('../../../../themes/VanillaBootstrap/design/prettify/prettify.js', FALSE, FALSE));
+        
+        $Sender->AddCssFile('/plugins/reAdjust/design/readjust.css');
+        $Sender->AddCssFile('/themes/VanillaBootstrap/design/less/main.css');
+        $Sender->AddCssFile('/themes/VanillaBootstrap/design/prettify/prettify.css');
+        $Sender->AddJsFile('/themes/VanillaBootstrap/js/bootstrap.main.js');
+        $Sender->AddJsFile('/themes/VanillaBootstrap/js/plugin.autosize.js');
+        $Sender->AddJsFile('/themes/VanillaBootstrap/js/vanilla.main.js');
+        $Sender->AddJsFile('/themes/VanillaBootstrap/design/prettify/prettify.js');
+        
     }
     
     public function Setup() {
