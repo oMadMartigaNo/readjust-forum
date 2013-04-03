@@ -37,7 +37,7 @@ class readjustPlugin extends Gdn_Plugin {
     }
     
     public function Setup() {
-        // Nothing to do here!
+        // No setup required
     }
     
 }
