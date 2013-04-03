@@ -282,3 +282,30 @@ hr {
         margin: 0;
     }
 }
+
+
+/* Replace low resolution images for bookmarks with font icons
+ ==============================================================================
+ */
+a.Bookmark,
+a.Bookmarked,
+a.Bookmarking {
+    background: none;
+}
+a.Bookmark:before,
+a.Bookmarked:before,
+a.Bookmarking:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    padding-right: 0.25em;
+}
+a.Bookmark:before {
+    content: "\f097";
+}
+a.Bookmarked:before,
+a.Bookmarking:before {
+    content: "\f02e";
+}
