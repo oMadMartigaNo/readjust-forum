@@ -19,8 +19,14 @@ $PluginInfo['reAdjust'] = array
  */
 class readjustPlugin extends Gdn_Plugin {
     
-    public function Base_Render_Before(&$Sender) {
-        $Sender->Head->AddString("<link rel=\"stylesheet\" href=\"/plugins/reAdjust/design/readjust.css\" type=\"text/css\" />");
+    public function Base_Render_Before($Sender){
+        $Sender->AddCssFile($this->GetResource('design/readjust.css', FALSE, FALSE));
+        $Sender->AddCssFile($this->GetResource('../../themes/VanillaBootstrap/design/less/main.css', FALSE, FALSE));
+        $Sender->AddCssFile($this->GetResource('../../themes/VanillaBootstrap/design/prettify/prettify.css', FALSE, FALSE));
+        $Sender->AddJsFile($this->GetResource('../../themes/VanillaBootstrap/js/bootstrap.main.js', FALSE, FALSE));
+        $Sender->AddJsFile($this->GetResource('../../themes/VanillaBootstrap/js/plugin.autosize.js', FALSE, FALSE));
+        $Sender->AddJsFile($this->GetResource('../../themes/VanillaBootstrap/js/vanilla.main.js', FALSE, FALSE));
+        $Sender->AddJsFile($this->GetResource('../../../../themes/VanillaBootstrap/design/prettify/prettify.js', FALSE, FALSE));
     }
     
     public function Setup() {
