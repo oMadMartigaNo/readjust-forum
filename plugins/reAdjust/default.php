@@ -19,12 +19,25 @@ $PluginInfo['reAdjust'] = array
  */
 class readjustPlugin extends Gdn_Plugin {
     
-    public function Base_Render_Before(&$Sender) {
-        $Sender->Head->AddString("<link rel=\"stylesheet\" href=\"/plugins/reAdjust/design/readjust.css\" type=\"text/css\" />");
+    public function Base_Render_Before(&$Sender){
+        
+        // Only render outside the dashboard
+        if ($Sender->MasterView != 'admin') {
+            
+            $Sender->AddCssFile('/plugins/reAdjust/design/readjust.css');
+            $Sender->AddCssFile('/themes/VanillaBootstrap/design/less/main.css');
+            $Sender->AddCssFile('/themes/VanillaBootstrap/design/prettify/prettify.css');
+            $Sender->AddJsFile('/themes/VanillaBootstrap/js/bootstrap.main.js');
+            $Sender->AddJsFile('/themes/VanillaBootstrap/js/plugin.autosize.js');
+            $Sender->AddJsFile('/themes/VanillaBootstrap/js/vanilla.main.js');
+            $Sender->AddJsFile('/themes/VanillaBootstrap/design/prettify/prettify.js');
+            
+        }
+        
     }
     
     public function Setup() {
-        // Nothing to do here!
+        // No setup required
     }
     
 }
