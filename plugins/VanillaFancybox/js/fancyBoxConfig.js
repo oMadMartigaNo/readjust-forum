@@ -21,7 +21,7 @@ $(function () {
     
     $("a.fancybox").fancybox({
         "padding"                 :   0,
-        "modal"                   :   true,
+        "modal"                   :   false,
         "loop"                    :   true
     });
     
