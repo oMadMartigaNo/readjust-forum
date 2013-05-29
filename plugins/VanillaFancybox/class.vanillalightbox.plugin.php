@@ -1,7 +1,7 @@
 <?php if (!defined('APPLICATION')) exit();
 
 /**
- * Define the plugin:
+ * Plugin info
  */
 $PluginInfo['VanillaFancybox'] = array(
     'Name'                  => 'jQuery Fancybox 2.0',
@@ -35,13 +35,7 @@ $PluginInfo['VanillaFancybox'] = array(
  */
 class VanillaFancyboxPlugin extends Gdn_Plugin {
     
-    /**
-     * Hack the Base Render in order to achieve our goal
-     * 
-     * @version 1.1
-     * @since 1.0
-     */
-    public function Base_Render_Before($Sender) {
+    public function Base_Render_Before(&$Sender) {
         
         // Show the Plugin only on specific pages...
         $DisplayOn =  array('activitycontroller', 'discussioncontroller', 'profilecontroller', 'messagecontroller');
