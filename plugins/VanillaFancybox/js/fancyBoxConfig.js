@@ -19,10 +19,8 @@ $(function () {
         }
     });
     
-    $("a.fancybox").fancybox({
-        "padding"                 :   0,
-        "modal"                   :   false,
-        "loop"                    :   true
+    $(".fancybox").fancybox({
+        "padding"                 :   0
     });
     
 });

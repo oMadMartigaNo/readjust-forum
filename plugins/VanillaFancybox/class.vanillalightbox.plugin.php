@@ -32,6 +32,7 @@ $PluginInfo['VanillaFancybox'] = array(
  * 
  * @link http://fancyapps.com/fancybox/ jQuery Fancybox Plugin
  *
+ * @todo Use Vanilla Base_Render_Before to render links around images instead of jQuery
  */
 class VanillaFancyboxPlugin extends Gdn_Plugin {
     
@@ -43,7 +44,6 @@ class VanillaFancyboxPlugin extends Gdn_Plugin {
         
         // Attach the Plugin's JavaScript & CSS to the site
         $Sender->AddJsFile($this->GetResource('js/jquery.fancybox.pack.js', FALSE, FALSE));
-        $Sender->AddJsFile($this->GetResource('js/jquery.easing.pack.js', FALSE, FALSE));
         $Sender->AddJsFile($this->GetResource('js/fancyBoxConfig.js', FALSE, FALSE));
         $Sender->AddCSSFile($this->GetResource('css/jquery.fancybox.css', FALSE, FALSE));
         
