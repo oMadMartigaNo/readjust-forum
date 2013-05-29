@@ -20,25 +20,9 @@ $(function () {
     });
     
     $("a.fancybox").fancybox({
-        "autoScale"             :   true,
-        "transitionIn"          :   "elastic",
-        "transitionOut"         :   "elastic",
-        "speedIn"               :   600, 
-        "speedOut"              :   200,
-        "padding"               :   0,
-        "modal"                 :   false, 
-        "overlayShow"           :   true,
-        "overlayOpacity"        :   0.9,
-        "overlayColor"          :   "#000",
-        "opacity"               :   false,
-        "titleShow"             :   true,
-        "titlePosition"         :   "over",
-        "hideOnOverlayClick"    :   true,
-        "hideOnContentClick"    :   true,
-        "enableEscapeButton"    :   true,
-        "cyclic"                :   true,
-        "changeFade"            :   0,
-        "autoDimensions"        :   false
+        "padding"                 :   0,
+        "modal"                   :   true,
+        "loop"                    :   true
     });
     
 });
