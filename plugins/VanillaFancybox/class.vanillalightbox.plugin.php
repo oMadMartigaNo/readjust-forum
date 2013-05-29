@@ -32,6 +32,7 @@ $PluginInfo['VanillaFancybox'] = array(
  * 
  * @link http://fancyapps.com/fancybox/ jQuery Fancybox Plugin
  *
+ * @todo Use Vanilla Base_Render_Before to render links around images instead of jQuery
  */
 class VanillaFancyboxPlugin extends Gdn_Plugin {
     
