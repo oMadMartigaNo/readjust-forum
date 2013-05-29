@@ -10,8 +10,8 @@ $PluginInfo['reAdjust'] = array
   'Description' => 'Inserts custom stylesheets and JavaScripts where it pleases us',
   'Version' => '1.0',
   'Author' => 'frippz',
-  'AuthorEmail' => 'frippz@me.com',
-  'AuthorUrl' => 'http://blog.frippz.se',
+  'AuthorEmail' => 'fredrik@frippz.se',
+  'AuthorUrl' => 'http://frippz.se',
 );
 
 /*
