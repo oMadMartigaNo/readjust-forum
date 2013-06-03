@@ -309,3 +309,11 @@ a.Bookmarked:before,
 a.Bookmarking:before {
     content: "\f02e";
 }
+
+
+/* Fix title/icon blending bug
+ ==============================================================================
+ */
+.Content .DataList.Discussions .Item .Title {
+    padding: 4px 2em 4px 0;
+}
