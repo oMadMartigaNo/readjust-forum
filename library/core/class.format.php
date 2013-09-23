@@ -832,19 +832,13 @@ class Gdn_Format {
          || preg_match('`(?:https?)://www\.youtu\.be\/([^&]+)`', $Url, $Matches)) 
          && C('Garden.Format.YouTube')) {
          $ID = $Matches[1];
-         /*$Result = <<<EOT
+         $Result = <<<EOT
 <div class="Video"><object width="$Width" height="$Height"><param name="movie" value="http://www.youtube.com/v/$ID&amp;hl=en_US&amp;fs=1&amp;"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/$ID&amp;hl=en_US&amp;fs=1&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="$Width" height="$Height"></embed></object></div>
-EOT;*/
-$Result = <<<EOT
-<div class="Video"><iframe title="YouTube video player" width="$Width" height="$Height" src="http://www.youtube.com/embed/$ID" frameborder="0" allowfullscreen></iframe></div>
 EOT;
       } elseif (preg_match('`(?:https?|ftp)://vimeo\.com\/(\d+)`', $Url, $Matches) && C('Garden.Format.Vimeo')) {
          $ID = $Matches[1];
-         /*$Result = <<<EOT
+         $Result = <<<EOT
 <div class="Video"><object width="$Width" height="$Height"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=$ID&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=$ID&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="$Width" height="$Height"></embed></object></div>
-EOT;*/
-$Result = <<<EOT
-<div class="Video"><iframe src="http://player.vimeo.com/video/$ID" width="640" height="360" frameborder="0"></iframe></div>
 EOT;
       } else {
          $nofollow = (self::$DisplayNoFollow) ? ' rel="nofollow"' : '';
