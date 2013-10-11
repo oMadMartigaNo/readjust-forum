@@ -1,24 +1,24 @@
-/* Reset some stupid inline rule that sets a 60px padding of the body
-==============================================================================
-*/
+/** 
+ * Reset some stupid inline rule that sets a 60px padding of the body
+ */
 @media (max-width: 979px) {
   body {
     padding-top: 0 !important;
   }
 }
 
-/* Add table of contents for FAQ (and hide for now)
-==============================================================================
-*/
+/** 
+ * Add table of contents for FAQ (and hide for now)
+ */
 .toc-list {
   display: none;
   font-weight: bold;
   margin-bottom: 2em;
 }
 
-/* Add support for tables with borders
-==============================================================================
-*/
+/** 
+ * Add support for tables with borders
+ */
 table.borders th,
 table.borders td {
   border: 1px solid #e0e0e0;
@@ -31,9 +31,9 @@ table.borders th {
 }
 
 
-/* Fix negative margin on navbar
-==============================================================================
-*/
+/**
+ * Fix negative margin on navbar
+ */
 @media (max-width: 767px) {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
@@ -43,9 +43,9 @@ table.borders th {
 }
 
 
-/* Fix crowded button space
-==============================================================================
-*/
+/**
+ * Fix crowded button space
+ */
 @media (max-width: 418px) {
   .CommentForm .Buttons {
     padding-bottom: 3em;
@@ -57,25 +57,25 @@ table.borders th {
 }
 
 
-/* Fix lack of space in top popup
-==============================================================================
-*/
+/**
+ * Fix lack of space in top popup
+ */
 #Popup .Body .Content {
   padding-top: 1.5em;
 
 }
 
-/* Fix misaligned cancel button
-==============================================================================
-*/
+/**
+ * Fix misaligned cancel button
+ */
 #DiscussionForm a.Cancel {
   margin-top: 20px;
 }
 
 
-/* Fix max width on embedded videos
-==============================================================================
-*/
+/**
+ * Fix max width on embedded videos
+ */
 .Video,
 .Video object,
 .Video object embed,
@@ -86,16 +86,16 @@ iframe,
   max-width: 100% !important;
 }
 
-/* Fix YouTube5 inheritance bugs
-==============================================================================
-*/
+/**
+ * Fix YouTube5 inheritance bugs
+ */
 .youtube5progress input {
   height: auto;
 }
 
-/* Restore list styling for message body
-==============================================================================
-*/
+/**
+ * Restore list styling for message body
+ */
 .Message ul {
   list-style: circle;
 }
@@ -115,26 +115,26 @@ iframe,
 }
 
 
-/* Add zebra rows to topics
-==============================================================================
-*/
+/**
+ * Add zebra rows to topics
+ */
 .DataList.Discussions .Item.Alt,
 .MessageList .Item.Alt {
   background: #fcfcfc;
 }
 
 
-/* Make comment field a little larger
-==============================================================================
-*/
+/**
+ * Make comment field a little larger
+ */
 .CommentForm textarea.TextBox {
   height: 10em;
 }
 
 
-/* Add icon to topic titles
-==============================================================================
-*/
+/**
+ * Add icon to topic titles
+ */
 .Item .Title:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -156,9 +156,9 @@ iframe,
 }
 
 
-/* Fix overflow of text in profiles
-==============================================================================
-*/
+/**
+ * Fix overflow of text in profiles
+ */
 .Box.About dl dd {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -166,9 +166,9 @@ iframe,
 }
 
 
-/* Restyle blockquotes
-==============================================================================
-*/
+/**
+ * Restyle blockquotes
+ */
 .Message blockquote {
   color: #4c4c4c;
 }
@@ -179,17 +179,17 @@ iframe,
 }
 
 
-/* Kill ugly border in tag cloud
-==============================================================================
-*/
+/**
+ * Kill ugly border in tag cloud
+ */
 .Box.Tags .PanelInfo li {
   border-bottom: none;
 }
 
 
-/* Fix paging width on mobile devices
-==============================================================================
-*/
+/**
+ * Fix paging width on mobile devices
+ */
 @media (max-width: 418px) {
   .Pager.NumberedPager a,
   .Pager.NumberedPager span {
@@ -198,9 +198,9 @@ iframe,
 }
 
 
-/* Hide credits in views < 767px
-==============================================================================
-*/
+/**
+ * Hide credits in views < 767px
+ */
 @media (max-width: 767px) {
   .credits.well {
     display: none;
@@ -208,9 +208,9 @@ iframe,
 }
 
 
-/* Customize looks of like buttons & badges
-==============================================================================
-*/
+/**
+ * Customize looks of like buttons & badges
+ */
 .Like .LikeThis .btn.btn-primary {
   background: #117cc0;
   color: #fff;
@@ -234,17 +234,17 @@ span.likes,
 }
 
 
-/* Hide annoying elements
-==============================================================================
-*/
+/**
+ * Hide annoying elements
+ */
 hr {
   display: none;
 }
 
 
-/* Fix broken login on small screens
-==============================================================================
-*/
+/**
+ * Fix broken login on small screens
+ */
 @media (max-width: 478px) {
   #dashboard_entry_signin .container {
     width: 100%;
@@ -284,9 +284,9 @@ hr {
 }
 
 
-/* Replace low resolution images for bookmarks with font icons
-==============================================================================
-*/
+/**
+ * Replace low resolution images for bookmarks with font icons
+ */
 a.Bookmark,
 a.Bookmarked,
 a.Bookmarking {
@@ -311,17 +311,17 @@ a.Bookmarking:before {
 }
 
 
-/* Fix title/icon blending bug
-==============================================================================
-*/
+/**
+ * Fix title/icon blending bug
+ */
 .Content .DataList.Discussions .Item .Title {
   padding: 4px 2em 4px 0;
 }
 
 
-/* Fix tagged heading border color
-==============================================================================
-*/
-.TaggedHeading {
+/**
+ * Fix tagged heading border color
+ */
+.Content .TaggedHeading {
   border-color: #ddd;
 }
