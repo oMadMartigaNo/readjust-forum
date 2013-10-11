@@ -318,4 +318,10 @@ a.Bookmarking:before {
   padding: 4px 2em 4px 0;
 }
 
+
+/* Fix tagged heading border color
+==============================================================================
+*/
+.TaggedHeading {
+  border-color: #ddd;
 }
