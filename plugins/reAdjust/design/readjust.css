@@ -1,81 +1,81 @@
 /* Reset some stupid inline rule that sets a 60px padding of the body
- ==============================================================================
- */
+==============================================================================
+*/
 @media (max-width: 979px) {
-    body {
-        padding-top: 0 !important;
-    }
+  body {
+    padding-top: 0 !important;
+  }
 }
 
 /* Add table of contents for FAQ (and hide for now)
- ==============================================================================
- */
+==============================================================================
+*/
 .toc-list {
-    display: none;
-    font-weight: bold;
-    margin-bottom: 2em;
+  display: none;
+  font-weight: bold;
+  margin-bottom: 2em;
 }
 
 /* Add support for tables with borders
- ==============================================================================
- */
+==============================================================================
+*/
 table.borders th,
 table.borders td {
-    border: 1px solid #e0e0e0;
-    padding: 3px 8px;
-    text-align: center;
+  border: 1px solid #e0e0e0;
+  padding: 3px 8px;
+  text-align: center;
 }
 table.borders th {
-    background-color: #ececec;
-    font-weight: bold;
+  background-color: #ececec;
+  font-weight: bold;
 }
 
 
 /* Fix negative margin on navbar
- ==============================================================================
- */
+==============================================================================
+*/
 @media (max-width: 767px) {
-    .navbar-fixed-top,
-    .navbar-fixed-bottom {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 }
 
 
 /* Fix crowded button space
- ==============================================================================
- */
+==============================================================================
+*/
 @media (max-width: 418px) {
-    .CommentForm .Buttons {
-        padding-bottom: 3em;
-        text-align: left;
-    }
+  .CommentForm .Buttons {
+    padding-bottom: 3em;
+    text-align: left;
+  }
 }
 .CommentForm .Buttons span {
-    display: none;
+  display: none;
 }
 
 
 /* Fix lack of space in top popup
- ==============================================================================
- */
+==============================================================================
+*/
 #Popup .Body .Content {
-    padding-top: 1.5em;
+  padding-top: 1.5em;
 
 }
 
 /* Fix misaligned cancel button
- ==============================================================================
- */
+==============================================================================
+*/
 #DiscussionForm a.Cancel {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 
 /* Fix max width on embedded videos
- ==============================================================================
- */
+==============================================================================
+*/
 .Video,
 .Video object,
 .Video object embed,
@@ -83,237 +83,239 @@ table.borders th {
 iframe,
 .youtube5container,
 .youtube5player {
-    max-width: 100% !important;
+  max-width: 100% !important;
 }
 
 /* Fix YouTube5 inheritance bugs
- ==============================================================================
- */
+==============================================================================
+*/
 .youtube5progress input {
-    height: auto;
+  height: auto;
 }
 
 /* Restore list styling for message body
- ==============================================================================
- */
+==============================================================================
+*/
 .Message ul {
-    list-style: circle;
+  list-style: circle;
 }
 .Message ol {
-    list-style: decimal;
+  list-style: decimal;
 }
 .Message ul,
 .Message ol {
-    margin: 0 0 1em 2em;
+  margin: 0 0 1em 2em;
 }
 
 .Message ul ul,
 .Message ol ol,
 .Message ul ol,
 .Message ol ul {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 
 /* Add zebra rows to topics
- ==============================================================================
- */
+==============================================================================
+*/
 .DataList.Discussions .Item.Alt,
 .MessageList .Item.Alt {
-    background: #fcfcfc;
+  background: #fcfcfc;
 }
 
 
 /* Make comment field a little larger
- ==============================================================================
- */
+==============================================================================
+*/
 .CommentForm textarea.TextBox {
-    height: 10em;
+  height: 10em;
 }
 
 
 /* Add icon to topic titles
- ==============================================================================
- */
+==============================================================================
+*/
 .Item .Title:before {
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    display: inline-block;
-    text-decoration: inherit;
-    padding-right: 0.25em;
-    content: "\f0e5";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  padding-right: 0.25em;
+  content: "\f0e5";
 }
 
 .Item.New .Title:before {
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    display: inline-block;
-    text-decoration: inherit;
-    padding-right: 0.25em;
-    content: "\f075";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  padding-right: 0.25em;
+  content: "\f075";
 }
 
 
 /* Fix overflow of text in profiles
- ==============================================================================
- */
+==============================================================================
+*/
 .Box.About dl dd {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 
 /* Restyle blockquotes
- ==============================================================================
- */
+==============================================================================
+*/
 .Message blockquote {
-    color: #4c4c4c;
+  color: #4c4c4c;
 }
 .Message blockquote p {
-    font-size: inherit;
-    font-weight: 300;
-    line-height: inherit;
+  font-size: inherit;
+  font-weight: 300;
+  line-height: inherit;
 }
 
 
 /* Kill ugly border in tag cloud
- ==============================================================================
- */
+==============================================================================
+*/
 .Box.Tags .PanelInfo li {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 
 /* Fix paging width on mobile devices
- ==============================================================================
- */
+==============================================================================
+*/
 @media (max-width: 418px) {
-    .Pager.NumberedPager a,
-    .Pager.NumberedPager span {
-        padding: 0 12px;
-    }    
+  .Pager.NumberedPager a,
+  .Pager.NumberedPager span {
+    padding: 0 12px;
+  }    
 }
 
 
 /* Hide credits in views < 767px
- ==============================================================================
- */
+==============================================================================
+*/
 @media (max-width: 767px) {
-    .credits.well {
-        display: none;
-    }
+  .credits.well {
+    display: none;
+  }
 }
 
 
 /* Customize looks of like buttons & badges
- ==============================================================================
- */
+==============================================================================
+*/
 .Like .LikeThis .btn.btn-primary {
-    background: #117cc0;
-    color: #fff;
-    font-size: inherit;
-    border: none;
-    padding: 0 2px;
-    text-shadow: none;
-    margin: 4px 0;
-    line-height: 1.3;
-    text-align: inherit;
-    float: right;
-    box-shadow: none;
+  background: #117cc0;
+  color: #fff;
+  font-size: inherit;
+  border: none;
+  padding: 0 2px;
+  text-shadow: none;
+  margin: 4px 0;
+  line-height: 1.3;
+  text-align: inherit;
+  float: right;
+  box-shadow: none;
 }
 span.likes,
 .Like .likes {
-    background: #117cc0;
-    text-shadow: none;
+  background: #117cc0;
+  text-shadow: none;
 }
 .DataList.Discussions .Meta .icon-thumbs-up {
-    color: #117cc0;
+  color: #117cc0;
 }
 
 
 /* Hide annoying elements
- ==============================================================================
- */
+==============================================================================
+*/
 hr {
-    display: none;
+  display: none;
 }
 
 
 /* Fix broken login on small screens
- ==============================================================================
- */
+==============================================================================
+*/
 @media (max-width: 478px) {
-    #dashboard_entry_signin .container {
-        width: 100%;
-    }
-    #dashboard_entry_signin .signin {
-        width: 100%;
-    }
-    .Entry.SingleEntryMethod {
-        margin: 0 1em;
-        width: auto;
-    }
-    .Entry.SingleEntryMethod #Form_User_SignIn label[for="Form_Email"],
-    .Entry.SingleEntryMethod #Form_User_SignIn label[for="Form_Password"] {
-        display: block;
-        text-align: left;
-    }
-    .Entry.SingleEntryMethod #Form_User_SignIn label[for="SignInRememberMe"] {
-        position: static;
-    }
-    .Entry.SingleEntryMethod #Form_User_SignIn .Buttons {
-        max-width: 280px;
-    }
-    .Entry.SingleEntryMethod #Form_User_SignIn input#Form_SignIn {
-        right: 0;
-    }
-    .Entry.SingleEntryMethod #Form_User_SignIn .CreateAccount {
-        left: 0;
-        margin-top: 2em;
-    }
-    #Popup.SignInPopup .Border {
-        width: 100%;
-        top: 0;
-        left: 0;
-        position: fixed;
-        margin: 0;
-    }
+  #dashboard_entry_signin .container {
+    width: 100%;
+  }
+  #dashboard_entry_signin .signin {
+    width: 100%;
+  }
+  .Entry.SingleEntryMethod {
+    margin: 0 1em;
+    width: auto;
+  }
+  .Entry.SingleEntryMethod #Form_User_SignIn label[for="Form_Email"],
+  .Entry.SingleEntryMethod #Form_User_SignIn label[for="Form_Password"] {
+    display: block;
+    text-align: left;
+  }
+  .Entry.SingleEntryMethod #Form_User_SignIn label[for="SignInRememberMe"] {
+    position: static;
+  }
+  .Entry.SingleEntryMethod #Form_User_SignIn .Buttons {
+    max-width: 280px;
+  }
+  .Entry.SingleEntryMethod #Form_User_SignIn input#Form_SignIn {
+    right: 0;
+  }
+  .Entry.SingleEntryMethod #Form_User_SignIn .CreateAccount {
+    left: 0;
+    margin-top: 2em;
+  }
+  #Popup.SignInPopup .Border {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    margin: 0;
+  }
 }
 
 
 /* Replace low resolution images for bookmarks with font icons
- ==============================================================================
- */
+==============================================================================
+*/
 a.Bookmark,
 a.Bookmarked,
 a.Bookmarking {
-    background: none;
+  background: none;
 }
 a.Bookmark:before,
 a.Bookmarked:before,
 a.Bookmarking:before {
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    display: inline-block;
-    text-decoration: inherit;
-    padding-right: 0.25em;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  padding-right: 0.25em;
 }
 a.Bookmark:before {
-    content: "\f097";
+  content: "\f097";
 }
 a.Bookmarked:before,
 a.Bookmarking:before {
-    content: "\f02e";
+  content: "\f02e";
 }
 
 
 /* Fix title/icon blending bug
- ==============================================================================
- */
+==============================================================================
+*/
 .Content .DataList.Discussions .Item .Title {
-    padding: 4px 2em 4px 0;
+  padding: 4px 2em 4px 0;
+}
+
 }
