@@ -320,8 +320,12 @@ a.Bookmarking:before {
 
 
 /**
- * Fix tagged heading border color
+ * Match tagged heading style with the rest of the headers
  */
 .Content .TaggedHeading {
   border-color: #ddd;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  border-radius: 4px 4px 0 0;
 }
