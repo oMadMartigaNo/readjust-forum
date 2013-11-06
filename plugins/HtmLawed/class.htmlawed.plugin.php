@@ -42,7 +42,7 @@ class HTMLawedPlugin extends Gdn_Plugin {
        'cdata' => 3,
        'css_expression' => 1,
        'deny_attribute' => 'on*',
-       'elements' => '*-applet-form-input-textarea-iframe-script-style', // object, embed allowed
+       'elements' => '*-applet-form-input-textarea-script-style', // object, embed allowed
        'keep_bad' => 0,
        'schemes' => 'classid:clsid; href: aim, feed, file, ftp, gopher, http, https, irc, mailto, news, nntp, sftp, ssh, telnet; style: nil; *:file, http, https', // clsid allowed in class
        'valid_xml' => 2
