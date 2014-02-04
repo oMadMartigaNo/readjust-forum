@@ -329,3 +329,15 @@ a.Bookmarking:before {
   padding: 10px 15px;
   border-radius: 4px 4px 0 0;
 }
+
+/**
+ * Hide admin check boxes and only show on hover (not the nicest solution, I know…)
+ */
+.AdminCheck {
+  display: none;
+  float: left;
+  margin-right: 0.5em;
+}
+.Item:hover .AdminCheck {
+  display: inline-block;
+}
