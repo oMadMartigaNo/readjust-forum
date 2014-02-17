@@ -11,9 +11,18 @@
  * Add table of contents for FAQ (and hide for now)
  */
 .toc-list {
-  display: none;
+  list-style: none;
   font-weight: bold;
-  margin-bottom: 2em;
+  margin: 1em 0 2em 0;
+}
+.toc-list li:before {
+  font-family: FontAwesome;
+  font-size: 1.5em;
+  color: #117cc0;
+  content: "\f059";
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 .35em 0 .15em;
 }
 
 /** 
@@ -348,4 +357,11 @@ a.Bookmarking:before {
 }
 .Item:hover .AdminCheck {
   display: inline-block;
+}
+
+/**
+ * Emoticon styling
+ */
+img.emoticon {
+  vertical-align: top;
 }
