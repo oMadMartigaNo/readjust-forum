@@ -1,4 +1,7 @@
-<?php if (!defined('APPLICATION')) exit(); ?>
+<?php
+  if (!defined('APPLICATION')) exit();
+  $this->Title(T('FAQ'));
+?>
 
 <h1>FAQ</h1>
 
