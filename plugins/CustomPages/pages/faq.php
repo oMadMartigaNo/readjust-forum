@@ -1,6 +1,6 @@
 <?php if (!defined('APPLICATION')) exit(); ?>
 
-<h2>FAQ</h2>
+<h1>FAQ</h1>
 
 <p>Välkommen till vår lilla FAQ där vi samlar allmän information om funktioner i vårt forum.</p>
 
@@ -9,10 +9,10 @@
   <li><a href="#smileys">Finns det stöd för smileys?</a></li>
 </ol>
 
-<h3 id="markdown">Hur formaterar jag mina inlägg?</h3>
+<h2 id="markdown">Hur formaterar jag mina inlägg?</h2>
 <p>Forumet använder Markdown för att formatera text. En komplett dokumentation över Markdown finns på <a href="http://daringfireball.net/projects/markdown/syntax">Daring Fireball</a>.</p>
 
-<h3 id="smileys">Finns det stöd för smileys?</h3>
+<h2 id="smileys">Finns det stöd för smileys?</h2>
 <p>Vi har rudimentärt stöd för högupplösta smileys/emoticons. Tyvärr finns ännu inga verktygsknappar för att infoga smileys, utan du måste skriva dem för hand, så omvandlas de automatiskt till bilder. Se tabellen nedan för en referens över tillgängliga smileys.</p>
 <table class="borders">
   <thead>
