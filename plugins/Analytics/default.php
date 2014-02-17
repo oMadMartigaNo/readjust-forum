@@ -6,7 +6,7 @@ $PluginInfo['Analytics'] = array (
     'Description' => 'Inserts the analytics snippet of your choosing',
     'Version' => '1.0',
     'Author' => 'Fredrik Frodlund',
-    'AuthorEmail' => 'dudewaitwhat@icloud.com',
+    'AuthorEmail' => 'fredrik@frippz.se',
     'AuthorUrl' => 'http://frippz.se',
 );
 
