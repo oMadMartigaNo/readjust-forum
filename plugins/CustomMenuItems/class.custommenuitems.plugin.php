@@ -35,6 +35,8 @@ class CustomMenuItemsPlugin extends Gdn_Plugin {
         if ($Sender->Menu && $Session->IsValid()) {
             // FAQ
             $Sender->Menu->AddLink('FAQ', T('<i class="icon-question-sign"></i>FAQ'), '/faq');
+            // Servrar
+            $Sender->Menu->AddLink('Servrar', T('<i class="icon-list-alt"></i>Servrar'), '/servrar');
         }
     }
 }
