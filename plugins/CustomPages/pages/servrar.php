@@ -11,7 +11,7 @@
 
 <p><a href="/profile/4/MadMartigaN">MadMartigaN</a> administrerar vår Minecraft-server.</p>
 
-<div class="well">
+<div class="well well-small">
   <ul>
     <li><strong>Adress:</strong> minecraft.readjust.se</li>
   </ul>
@@ -32,7 +32,7 @@
   <li>Behandla andra som du själv vill bli behandlad, var snäll då vi delar servern med andra!</li>
 </ul>
 
-<p>Bryter du mot reglerna så blir du permanent bannad! Vi loggar allt!</p>
+<div class="alert alert-error">Bryter du mot reglerna så blir du permanent bannad! Vi loggar allt!</div>
 
 <h2>Mumble</h2>
 
@@ -40,7 +40,7 @@
 
 <p>Programmet finns på <a href="http://mumble.sourceforge.net">http://mumble.sourceforge.net</a></p>
 
-<div class="well">
+<div class="well well-small">
   <ul>
     <li><strong>Adress:</strong> mumble.readjust.se</li>
     <li><strong>Port:</strong> 64738 (standard)</li>
