@@ -17,7 +17,7 @@
   </ul>
 </div>
 
-<p>Vi måste veta ditt nickname annars kommer du inte in. Besök <a href="/discussion/2608/minecraft/">diskussionstråden för Minecraft</a> i forumen för att meddela admin ditt nick.</p>
+<p>Vi måste veta ditt nickname annars kommer du inte in. Besök <a href="/discussion/2608/minecraft">diskussionstråden för Minecraft</a> i forumen för att meddela admin ditt nick.</p>
 
 <h3>Länkar</h3>
 <ul class="list">
@@ -36,7 +36,7 @@
 
 <h2>Mumble</h2>
 
-<p><a href="/profile/9/Effeevee">Effeevee</a> har lagt upp en egen mumble server som kan nyttjas av de som vill här på reAdjust. Får du problem så finns det en <a href="/discussion/2608/minecraft/">diskussionstråd i forumet</a>.</p>
+<p><a href="/profile/9/Effeevee">Effeevee</a> har lagt upp en egen mumble server som kan nyttjas av de som vill här på reAdjust. Får du problem så finns det en <a href="/discussion/3475/readjust-mumble-server-uppe">diskussionstråd i forumet</a>.</p>
 
 <p>Programmet finns på <a href="http://mumble.sourceforge.net">http://mumble.sourceforge.net</a></p>
 
