@@ -94,23 +94,31 @@ iframe,
 }
 
 /**
- * Restore list styling for message body
+ * Restore list styling for message body and custom pages
  */
-.Message ul {
+.Message ul,
+ul.list {
   list-style: circle;
 }
-.Message ol {
+.Message ol,
+ol.list {
   list-style: decimal;
 }
 .Message ul,
-.Message ol {
+.Message ol,
+ul.list,
+ol.list {
   margin: 0 0 1em 2em;
 }
 
 .Message ul ul,
 .Message ol ol,
 .Message ul ol,
-.Message ol ul {
+.Message ol ul,
+ul.list ul.list,
+ol.list ol.list,
+ul.list ol.list,
+ol.list ul.list {
   margin-bottom: 0;
 }
 
