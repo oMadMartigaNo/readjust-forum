@@ -8,7 +8,6 @@ $PluginInfo['FontAwesome'] = array(
   'Description'     => 'Includes icon font set Font Awesome',
   'Version'         => '0.1',
   'Author'          => 'frippz',
-  'AuthorEmail'     => 'fredrik@frippz.se',
   'AuthorUrl'       => 'http://frippz.se'
 );
 
@@ -17,20 +16,20 @@ $PluginInfo['FontAwesome'] = array(
  * Begin plugin
  */
 class fontawesomePlugin extends Gdn_Plugin {
+  
+  public function Base_Render_Before(&$Sender){
     
-    public function Base_Render_Before(&$Sender){
-        
-        // Only render outside the dashboard
-        if ($Sender->MasterView != 'admin') {
-            
-            $Sender->AddCssFile('/plugins/FontAwesome/css/font-awesome.css');
-            
-        }
-        
+    // Only render outside the dashboard
+    if ($Sender->MasterView != 'admin') {
+      
+      $Sender->AddCssFile('/plugins/FontAwesome/css/font-awesome.css');
+      
     }
     
-    public function Setup() {
-        // No setup required
-    }
-    
+  }
+  
+  public function Setup() {
+    // No setup required
+  }
+  
 }
