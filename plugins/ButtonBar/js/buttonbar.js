@@ -207,7 +207,7 @@ jQuery(document).ready(function($) {
          $(TextArea).data('InputFormat', gdn.definition('InputFormat', 'Html'));
          
          // Build button UIs
-         $(ThisButtonBar).find('div').each(function(i, el){
+         $(ThisButtonBar).find('.Button').each(function(i, el){
             var Operation = $(el).find('span').text();
             
             var UIOperation = Operation.charAt(0).toUpperCase() + Operation.slice(1);
@@ -221,9 +221,9 @@ jQuery(document).ready(function($) {
          ButtonBar.BindShortcuts(TextArea);
          
          // Attach events
-         $(ThisButtonBar).find('div').mousedown(function(event){
+         $(ThisButtonBar).find('.Button').mousedown(function(event){
             var MyButtonBar = $(event.target).closest('.ButtonBar');
-            var Button = $(event.target).find('span').closest('div');
+            var Button = $(event.target).find('span').closest('.Button');
             if ($(Button).hasClass('ButtonOff')) return;
             
             var TargetTextArea = $(MyButtonBar).data('ButtonBarTarget');
@@ -267,7 +267,7 @@ jQuery(document).ready(function($) {
       },
       
       DisableButton: function(ButtonBarObj, Operation) {
-         $(ButtonBarObj).find('div').each(function(i,Button){
+         $(ButtonBarObj).find('.Button').each(function(i,Button){
             var ButtonOperation = $(Button).find('span').text();
             if (ButtonOperation == Operation)
                $(Button).addClass('ButtonOff');
@@ -337,27 +337,27 @@ jQuery(document).ready(function($) {
             case 'bold':
                $(TextArea).insertRoundTag('b',bbcodeOpts);
                break;
-
+               
             case 'italic':
                $(TextArea).insertRoundTag('i',bbcodeOpts);
                break;
-
+               
             case 'underline':
                $(TextArea).insertRoundTag('u',bbcodeOpts);
                break;
-
+               
             case 'strike':
                $(TextArea).insertRoundTag('s',bbcodeOpts);
                break;
-
+               
             case 'code':
                $(TextArea).insertRoundTag('code',bbcodeOpts);
                break;
-
+               
             case 'image':
                $(TextArea).insertRoundTag('img',bbcodeOpts);
                break;
-
+               
             case 'url':
                var thisOpts = $.extend(bbcodeOpts,{});
                
@@ -373,15 +373,15 @@ jQuery(document).ready(function($) {
                
                $(TextArea).insertRoundTag('url',thisOpts);
                break;
-
+               
             case 'quote':
                $(TextArea).insertRoundTag('quote',bbcodeOpts);
                break;
-
+               
             case 'spoiler':
                $(TextArea).insertRoundTag('spoiler',bbcodeOpts);
                break;
-
+               
             case 'prompturl':
                var thisOpts = $.extend(bbcodeOpts, {});
                var NewURL = prompt("Enter your URL:",'http://');
@@ -404,23 +404,23 @@ jQuery(document).ready(function($) {
             case 'bold':
                $(TextArea).insertRoundTag('b',htmlOpts);
                break;
-
+               
             case 'italic':
                $(TextArea).insertRoundTag('i',htmlOpts);
                break;
-
+               
             case 'underline':
                $(TextArea).insertRoundTag('u',htmlOpts);
                break;
-
+               
             case 'strike':
                $(TextArea).insertRoundTag('del',htmlOpts);
                break;
-
+               
             case 'code':
                $(TextArea).insertRoundTag('code',htmlOpts);
                break;
-
+               
             case 'image':
                var thisOpts = $.extend(htmlOpts, {
                   center: 'src',
@@ -428,7 +428,7 @@ jQuery(document).ready(function($) {
                });
                $(TextArea).insertRoundTag('img',thisOpts,{src:''});
                break;
-
+               
             case 'url':
                var urlOpts = {};
                var thisOpts = $.extend(htmlOpts, {
@@ -447,15 +447,15 @@ jQuery(document).ready(function($) {
                
                $(TextArea).insertRoundTag('a',thisOpts,urlOpts);
                break;
-
+               
             case 'quote':
                $(TextArea).insertRoundTag('blockquote',htmlOpts);
                break;
-
+               
             case 'spoiler':
                $(TextArea).insertRoundTag('div',htmlOpts,{'class':'Spoiler'});
                break;
-
+               
             case 'prompturl':
                var urlOpts = {};
                var thisOpts = $.extend(htmlOpts, {});
@@ -481,24 +481,24 @@ jQuery(document).ready(function($) {
             case 'bold':
                $(TextArea).insertRoundTag('**',markdownOpts);
                break;
-
+               
             case 'italic':
                $(TextArea).insertRoundTag('_',markdownOpts);
                break;
-
+               
             case 'underline':
                // DISABLED
                return;
                break;
-
+               
             case 'strike':
                $(TextArea).insertRoundTag('-',markdownOpts);
                break;
-
+               
             case 'code':
                $(TextArea).insertRoundTag('`',markdownOpts);
                break;
-
+               
             case 'image':
                var thisOpts = $.extend(markdownOpts, {
                   prefix:'!',
@@ -509,7 +509,7 @@ jQuery(document).ready(function($) {
                });
                $(TextArea).insertRoundTag('',thisOpts);
                break;
-
+               
             case 'url':
                var thisOpts = $.extend(markdownOpts, {
                   opentag:'(',
@@ -529,7 +529,7 @@ jQuery(document).ready(function($) {
                
                $(TextArea).insertRoundTag('',thisOpts);
                break;
-
+               
             case 'quote':
                var thisOpts = $.extend(markdownOpts, {
                   prefix:'> ',
@@ -540,12 +540,12 @@ jQuery(document).ready(function($) {
                });
                $(TextArea).insertRoundTag('',thisOpts);
                break;
-
+               
             case 'spoiler':
                // DISABLED
                return;
                break;
-
+               
             case 'prompturl':
                var NewURL = prompt("Enter your URL:",'http://');
                var GuessText = NewURL.replace('http://','').replace('www.','');

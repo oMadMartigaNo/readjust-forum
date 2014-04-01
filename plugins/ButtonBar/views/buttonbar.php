@@ -1,11 +1,11 @@
 <div class="ButtonBar">
-  <a class="Button"><i class="fa fa-bold"></i><span class="struct">Bold</span></a>
-  <a class="Button"><i class="fa fa-italic"></i><span class="struct">Italic</span></a>
-  <a class="Button"><i class="fa fa-underline"></i><span class="struct">Underline</span></a>
-  <a class="Button"><i class="fa fa-strikethrough"></i><span class="struct">Strike</span></a>
-  <a class="Button"><i class="fa fa-code"></i><span class="struct">Code</span></a>
-  <a class="Button"><i class="fa fa-picture-o"></i><span class="struct">Image</span></a>
-  <a class="Button"><i class="fa fa-link"></i><span class="struct">URL</span></a>
-  <a class="Button"><i class="fa fa-comment"></i><span class="struct">Quote</span></a>
-  <a class="Button"><i class="fa fa-exclamation-triangle"></i><span class="struct">Spoiler</span></a>
+  <a class="Button"><span class="struct">bold</span><i class="fa fa-bold"></i></a>
+  <a class="Button"><span class="struct">italic</span><i class="fa fa-italic"></i></a>
+  <a class="Button"><span class="struct">underline</span><i class="fa fa-underline"></i></a>
+  <a class="Button"><span class="struct">strike</span><i class="fa fa-strikethrough"></i></a>
+  <a class="Button"><span class="struct">code</span><i class="fa fa-code"></i></a>
+  <a class="Button"><span class="struct">image</span><i class="fa fa-picture-o"></i></a>
+  <a class="Button"><span class="struct">url</span><i class="fa fa-link"></i></a>
+  <a class="Button"><span class="struct">quote</span><i class="fa fa-comment"></i></a>
+  <a class="Button"><span class="struct">spoiler</span><i class="fa fa-exclamation-triangle"></i></a>
 </div>
