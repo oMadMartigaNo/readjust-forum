@@ -365,3 +365,13 @@ a.Bookmarking:before {
 img.emoticon {
   vertical-align: top;
 }
+
+/**
+ * Structural elements
+ * Visible for screen readers but invisible when CSS is enabled
+ */
+.struct,
+.struct * {
+  position: absolute;
+  left: -9999px;
+}
