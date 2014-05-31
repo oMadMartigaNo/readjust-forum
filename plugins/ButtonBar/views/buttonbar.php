@@ -1,8 +1,13 @@
 <div class="ButtonBar">
-  <a class="Button"><span class="struct">bold</span><i class="fa fa-bold"></i></a>
-  <a class="Button"><span class="struct">italic</span><i class="fa fa-italic"></i></a>
-  <a class="Button"><span class="struct">code</span><i class="fa fa-code"></i></a>
-  <a class="Button"><span class="struct">image</span><i class="fa fa-picture-o"></i></a>
-  <a class="Button"><span class="struct">url</span><i class="fa fa-link"></i></a>
-  <a class="Button"><span class="struct">quote</span><i class="fa fa-comment"></i></a>
+   <div class="BarWrap"><?php
+      echo '<span class="ButtonWrap"><span>bold</span></span>';
+      echo '<span class="ButtonWrap"><span>italic</span></span>';
+      echo '<span class="ButtonWrap"><span>underline</span></span>';
+      echo '<span class="ButtonWrap"><span>strike</span></span>';
+      echo '<span class="ButtonWrap"><span>code</span></span>';
+      echo '<span class="ButtonWrap"><span>image</span></span>';
+      echo '<span class="ButtonWrap"><span>url</span></span>';
+      echo '<span class="ButtonWrap"><span>quote</span></span>';
+      echo '<span class="ButtonWrap"><span>spoiler</span></span>';
+   ?></div>
 </div>
