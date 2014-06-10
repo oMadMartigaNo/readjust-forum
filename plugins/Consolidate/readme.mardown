@@ -1,9 +1,0 @@
-# Consolidate #
-
-### About ###
-Combine resources (js, css) according to regex patterns,
-to have the ideal number of requests, and minimise bloat.
-
-### Sponsor ###
-Special thanks to balaboostas.com for making this happen.
-
