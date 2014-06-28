@@ -22,3 +22,10 @@ blockquote.Quote {
   font-style: italic;
   margin: 1em 0 2em;
 }
+
+/**
+ * Fix emoticon display
+ */
+.Message .emoticon {
+  display: inline-block;
+}
