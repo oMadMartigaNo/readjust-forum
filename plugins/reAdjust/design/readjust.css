@@ -1,0 +1,24 @@
+/**
+ * Set max-width to all images in content
+ */
+.Message img {
+  max-width: 100%;
+}
+
+/**
+ * Restyle block quotes
+ */
+blockquote.Quote {
+  color: #666;
+  font-size: inherit;
+}
+
+/**
+ * Restyle image resize message
+ */
+.ImageResized {
+  color: #666;
+  font-size: 0.75em;
+  font-style: italic;
+  margin: 1em 0 2em;
+}
