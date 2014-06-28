@@ -26,6 +26,14 @@ class readjustPlugin extends Gdn_Plugin {
     
   }
   
+  public function PageController_Render_Before($Sender) {
+    
+    // Hide unwanted modules
+    unset($Sender->Assets['Panel']['DiscussionsModule']);
+    unset($Sender->Assets['Panel']['RecentActivityModule']);
+    
+  }
+  
   public function Setup() {
     // No setup required
   }
