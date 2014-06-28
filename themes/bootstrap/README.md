@@ -1,6 +1,6 @@
-![](screenshot.png)
+[![Bootstrap for Vanilla](screenshot.png)](https://github.com/kasperisager/vanilla-bootstrap)
 
-[![Release](http://img.shields.io/github/release/kasperisager/vanilla-bootstrap.svg?style=flat)](https://github.com/kasperisager/vanilla-bootstrap/releases)
+[![Release](http://img.shields.io/github/release/kasperisager/vanilla-bootstrap.svg?style=flat)](https://github.com/kasperisager/vanilla-bootstrap/releases) [![Depencency Status](http://img.shields.io/gemnasium/kasperisager/vanilla-bootstrap.svg?style=flat)](https://gemnasium.com/kasperisager/vanilla-bootstrap)
 
 Bootstrap for Vanilla has been rewritten from scratch on top of [Bootstrap 3](http://getbootstrap.com) in this second installation of the most popular theme for Vanilla Forums. Kickstart your Vanilla-powered community forums with a fresh and solid theme that is ready to be customized to your heart's desires.
 
@@ -8,8 +8,8 @@ Bootstrap for Vanilla has been rewritten from scratch on top of [Bootstrap 3](ht
 
 To get started using Bootstrap for Vanilla, either:
 
-* [__Download the latest release__](https://github.com/kasperisager/vanilla-bootstrap/releases)
-* Clone the repository directly into your Vanilla `themes` directory:
+- [__Download the latest release__](https://github.com/kasperisager/vanilla-bootstrap/releases/latest)
+- Clone the repository directly into your Vanilla `themes` directory:
 
 ```sh
 $ git clone kasperisager/vanilla-bootstrap bootstrap
@@ -25,17 +25,27 @@ $ git clone kasperisager/vanilla-bootstrap bootstrap
 
 ## Compiling assets
 
-Bootstrap for Vanilla was scaffolded using [Ninja](https://github.com/kasperisager/vanilla-ninja). For instructions on how to install the development dependencies and front-end components, please refer to the [Ninja documentation](https://github.com/kasperisager/vanilla-ninja#getting-started). Once you've got everything set up, use the following tasks to re-compile the theme assets:
+The following instructions assume that you have already installed Node.js on your computer. If this is not the case, please download and install the latest stable release from the official [Node.js download page](http://nodejs.org/download/). If you are using [Homebrew](http://brew.sh/), you can also install Node.js via the command line:
 
-#### Build - `gulp`
-Runs the default Gulp task which will compile all theme assets. LESS stylesheets will be compiled to [`design/style.css`](design/style.css) and Javascripts will be concatenated and output to [`js/custom.js`](js/custom.js).
+```sh
+$ brew install node
+```
 
-#### Watch - `gulp watch`
-Starts an instance of [tiny-lr](https://github.com/mklabs/tiny-lr) (a tiny LiveReload server) that watches the compiled assets for changes and pushes these to your Vanilla installation automatically whenever they change.
+> __Notice__: It is important that you install Node in a way that does not require you to `sudo`.
 
-## Customizations
+Once you have Node.js up and running, you will need to install the local dependencies using [npm](http://npmjs.org):
 
-Bootstrap for Vanilla supports tools such as [Bootstrap Magic](http://pikock.github.io/bootstrap-magic/app) out-of-the-box. All custom variables go in [`less/variables.less`](less/variables.less) and will override all those set by both Bootstrap itself as well as any extensions made by Bootstrap for Vanilla. For more in-depth customizations, [`less/custom.less`](less/custom.less) has been made available.
+```sh
+$ npm install
+```
+
+### Tasks
+
+#### Build - `npm run build`
+Compiles all theme assets using Gulp. LESS stylesheets will be compiled to [`design/style.css`](design/style.css) and Javascripts will be concatenated and output to [`js/custom.js`](js/custom.js).
+
+#### Watch - `npm run watch`
+Watches the assets for changes and runs the appropriate Gulp tasks. Also starts a Livereload server that will push the changes to your Vanilla installation automatically.
 
 ## [Issue tracking](https://github.com/kasperisager/vanilla-bootstrap/issues)
 
@@ -45,4 +55,4 @@ If you come across any bugs or if you have a feature request, please file an iss
 
 ---
 
-Copyright 2014 © [Kasper Kronborg Isager](http://kasperisager.github.io). Licensed under the terms of the [MIT License](LICENSE.md)
+Copyright &copy; 2014 [Kasper Kronborg Isager](https://github.com/kasperisager). Licensed under the terms of the [MIT License](LICENSE.md)

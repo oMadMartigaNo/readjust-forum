@@ -1,11 +1,17 @@
-//= require ../../bower_components/bootstrap/js/transition.js
-//= require ../../bower_components/bootstrap/js/collapse.js
-
-//= require ../../bower_components/spin.js/spin.js
-//= require ../../bower_components/spin.js/jquery.spin.js
-
 ;(function ($, window, document, undefined) {
   'use strict';
+
+  window.icheck = {
+    autoInit: false
+  , autoAjax: false
+  };
+
+  $(document).on('ready ajaxSuccess', function () {
+
+    // Initialize or re-initialize iCheck
+    $('input:not(.icheck-input)').icheck();
+
+  });
 
   $(function () {
 
@@ -145,10 +151,17 @@
         $(overlay).each(closePopup);
       });
 
+    var confirmPopupEls = [
+      'a.Delete'
+    , 'a.DeleteComment'
+    , 'a.PopConfirm'
+    , 'a.ClearConversation'
+    ];
+
     // When only a confirmation modal is shown, the "popupLoading" and
     // "popupReveal" events are never triggered. Manually trigger them to make
     // sure that the modal is actually shown.
-    $(document).on('click', 'a.Delete, a.DeleteComment, a.PopConfirm', function (e) {
+    $(document).on('click', confirmPopupEls.join(), function (e) {
       $(document).trigger('popupLoading');
 
       setTimeout(function () {
