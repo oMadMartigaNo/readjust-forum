@@ -1,7 +1,8 @@
 /**
- * Set max-width to all images in content
+ * Set max-width to all inline/block content objects
  */
-.Message img {
+.Message img,
+.Message iframe {
   max-width: 100%;
 }
 
