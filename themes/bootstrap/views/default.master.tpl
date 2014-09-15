@@ -2,11 +2,8 @@
 <html lang="en" class="sticky-footer-html">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     {asset name="Head"}
-
   </head>
   <body id="{$BodyID}" class="{$BodyClass} sticky-footer-body">
 
@@ -43,8 +40,7 @@
             </ul>
           {else}
             <ul class="nav navbar-nav navbar-right">
-              <li>{link path="entry/register" text="Register" target="current"}</li>
-              <li>{link path="signin" text="Sign In" target="current"}</li>
+              {signin_link}
             </ul>
           {/if}
         </div><!--/.nav-collapse -->
