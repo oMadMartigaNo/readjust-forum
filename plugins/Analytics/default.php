@@ -4,15 +4,15 @@
 $PluginInfo['Analytics'] = array (
     'Name'        => 'Analytics',
     'Description' => 'Inserts the analytics snippet of your choosing',
-    'Version'     => '1.0.1',
+    'Version'     => '1.0.2',
     'Author'      => 'Fredrik Frodlund',
     'AuthorUrl'   => 'http://frippz.se',
 );
 
 class analyticsPlugin extends Gdn_Plugin {
-  
-  public function Base_Render_Before(&$Sender) {
-    
+
+  public function Base_Render_Before($Sender) {
+
     // Insert snippet inside <head>
     $Sender->Head->AddString
       ('
@@ -30,9 +30,21 @@ var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[
 g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
 })();
 </script>
-<!-- End Piwik Tracking Code -->');
+<!-- End Piwik Tracking Code -->
+<!-- Begin Google Analytics Tracking Code -->
+<script>
+  (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,"script","//www.google-analytics.com/analytics.js","ga");
+
+  ga("create", "UA-57274505-2", "auto");
+  ga("send", "pageview");
+
+</script>
+<!-- End Google Analytics Tracking Code -->');
   }
-  
+
   public function Setup() {
     // No setup required
   }
