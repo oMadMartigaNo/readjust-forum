@@ -17,13 +17,19 @@ $ git clone kasperisager/vanilla-bootstrap bootstrap
 
 ## Included themes
 
-![Default](design/screenshot_default.png) | ![Bootstrap](design/screenshot_bootstrap.png) | ![Cerulean](design/screenshot_cerulean.png) | ![Cosmo](design/screenshot_cosmo.png)
----|---|---|---
-![Cyborg](design/screenshot_cyborg.png) | ![Darkly](design/screenshot_darkly.png) | ![Flatly](design/screenshot_flatly.png) | ![Journal](design/screenshot_journal.png)
-![Lumen](design/screenshot_lumen.png) | ![Readable](design/screenshot_readable.png) | ![Simplex](design/screenshot_simplex.png) | ![Slate](design/screenshot_slate.png)
-![Spacelab](design/screenshot_spacelab.png) | ![Superhero](design/screenshot_superhero.png) | ![United](design/screenshot_united.png) | ![Yeti](design/screenshot_yeti.png)
+<img title="Default" src="design/screenshot_default.png" width="32%"> <img title="Bootstrap" src="design/screenshot_bootstrap.png" width="32%"> <img title="Cerulean" src="design/screenshot_cerulean.png" width="32%">
 
-## Compiling assets
+<img title="Cosmo" src="design/screenshot_cosmo.png" width="32%"> <img title="Cyborg" src="design/screenshot_cyborg.png" width="32%"> <img title="Darkly" src="design/screenshot_darkly.png" width="32%">
+
+<img title="Flatly" src="design/screenshot_flatly.png" width="32%"> <img title="Journal" src="design/screenshot_journal.png" width="32%"> <img title="Lumen" src="design/screenshot_lumen.png" width="32%"> 
+
+<img title="Paper" src="design/screenshot_paper.png" width="32%"> <img title="Readable" src="design/screenshot_readable.png" width="32%"> <img title="Sandstone" src="design/screenshot_sandstone.png" width="32%">
+
+<img title="Simplex" src="design/screenshot_simplex.png" width="32%"> <img title="Slate" src="design/screenshot_slate.png" width="32%"> <img title="Spacelab" src="design/screenshot_spacelab.png" width="32%">
+
+<img title="Superhero" src="design/screenshot_superhero.png" width="32%"> <img title="United" src="design/screenshot_united.png" width="32%"> <img title="Yeti" src="design/screenshot_yeti.png" width="32%">
+
+## Development
 
 The following instructions assume that you have already installed Node.js on your computer. If this is not the case, please download and install the latest stable release from the official [Node.js download page](http://nodejs.org/download/). If you are using [Homebrew](http://brew.sh/), you can also install Node.js via the command line:
 
