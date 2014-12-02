@@ -2560,7 +2560,10 @@ class UserModel extends Gdn_Model {
       
       // Remove activity comments.
       $this->GetDelete('ActivityComment', array('InsertUserID' => $UserID), $Content);
-      
+
+      // Remove comments in moderation queue
+      $this->GetDelete('Log', array('RecordUserID' => $UserID, 'Operation' => 'Pending'), $Content);
+
       // Clear out information on the user.
       $this->SetField($UserID, array(
           'About' => NULL,
@@ -3196,9 +3199,12 @@ class UserModel extends Gdn_Model {
          if (!$User->Email) {
             continue;
          }
-         
-         $PasswordResetKey = RandomString(6);
+
+         $Email = new Gdn_Email(); // Instantiate in loop to clear previous settings
+         $PasswordResetKey = BetterRandomString(20, 'Aa0');
+         $PasswordResetExpires = strtotime('+1 hour');
          $this->SaveAttribute($User->UserID, 'PasswordResetKey', $PasswordResetKey);
+         $this->SaveAttribute($User->UserID, 'PasswordResetExpires', $PasswordResetExpires);
          $AppTitle = C('Garden.Title');
          $Email->Subject(sprintf(T('[%s] Password Reset Request'), $AppTitle));
          $Email->To($User->Email);
@@ -3229,6 +3235,7 @@ class UserModel extends Gdn_Model {
 
       $this->SQL->Update('User')->Set('Password', $Password)->Set('HashMethod', 'Vanilla')->Where('UserID', $UserID)->Put();
       $this->SaveAttribute($UserID, 'PasswordResetKey', '');
+      $this->SaveAttribute($UserID, 'PasswordResetExpires', '');
 
       $this->EventArguments['UserID'] = $UserID;
       $this->FireEvent('AfterPasswordReset');
