@@ -1,7 +1,0 @@
-{
-  "name": "vanilla-timeago",
-  "private": true,
-  "dependencies": {
-    "jquery-timeago": "1.4.0"
-  }
-}
