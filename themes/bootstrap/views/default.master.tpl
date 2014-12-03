@@ -61,6 +61,8 @@
       </div>
     </section>
 
+    {asset name="Foot"}
+
     {event name="AfterBody"}
   </body>
 </html>
