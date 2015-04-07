@@ -46,3 +46,10 @@ blockquote.Quote {
   padding: 0.5em 0.25em;
   text-align: center;
 }
+
+/**
+ * Fix broken button layout on small screens
+ */
+.Buttons > * {
+  margin-bottom: 0.5em;
+}
