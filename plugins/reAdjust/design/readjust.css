@@ -30,3 +30,26 @@ blockquote.Quote {
 .Message .emoticon {
   display: inline-block;
 }
+
+/**
+ * Fix broken pager layout
+ */
+.PageControls .NumberedPager {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 100%;
+  margin: 1em 0;
+  width: 100%;
+}
+.PageControls .NumberedPager > * {
+  flex: 1 1 0;
+  padding: 0.5em 0.25em;
+  text-align: center;
+}
+
+/**
+ * Fix broken button layout on small screens
+ */
+.Buttons > * {
+  margin-bottom: 0.5em;
+}
