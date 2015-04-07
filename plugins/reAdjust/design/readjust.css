@@ -43,7 +43,7 @@ blockquote.Quote {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   max-width: 100%;
-  margin: 1em 0;
+  margin: 1em 0 !important;
   width: 100%;
 }
 .PageControls .NumberedPager > * {
