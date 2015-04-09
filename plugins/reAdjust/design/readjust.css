@@ -34,25 +34,24 @@ blockquote.Quote {
 /**
  * Fix broken pager layout
  */
-.PageControls .NumberedPager {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  max-width: 100%;
-  margin: 1em 0 !important;
-  width: 100%;
-}
-.PageControls .NumberedPager > * {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 0;
-      -ms-flex: 1 1 0;
-          flex: 1 1 0;
-  padding: 0.5em 0.25em;
-  text-align: center;
+@media only screen and (max-width: 600px) {
+
+  .PageControls .NumberedPager {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    max-width: 100%;
+    margin: 1em 0 !important;
+    width: 100%;
+  }
+  .PageControls .NumberedPager > * {
+    -webkit-flex: 1 1 0;
+            flex: 1 1 0;
+    padding: 0.5em 0.25em;
+    text-align: center;
+  }
+
 }
 
 /**
