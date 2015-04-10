@@ -55,6 +55,17 @@ blockquote.Quote {
 }
 
 /**
+ * Fix "Create new post" button margins on small viewports
+ */
+@media only screen and (max-width: 600px) {
+
+  .BoxNewDiscussion {
+    margin: 1em 0;
+  }
+
+}
+
+/**
  * Fix broken button layout on small screens
  */
 .Buttons > * {
