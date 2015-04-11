@@ -69,5 +69,6 @@ blockquote.Quote {
  * Fix broken button layout on small screens
  */
 .Buttons > * {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5em !important;
 }
+
