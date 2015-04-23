@@ -1,14 +1,16 @@
 function fancyMeSomeBox() {
 
-  var $fancyImg = $('.Message a[href] > img').closest('a');
+  var $fancyImg = $('.ImageResized').prev('a');
 
-  $fancyImg.fancybox({
-    'transitionIn': 'elastic',
-    'transitionOut': 'elastic',
-    'speedIn': 200,
-    'speedOut': 200,
-    'overlayShow': true,
-    'scrolling': 'no'
+  $fancyImg.each(function () {
+    $(this).fancybox({
+      'transitionIn': 'elastic',
+      'transitionOut': 'elastic',
+      'speedIn': 200,
+      'speedOut': 200,
+      'overlayShow': true,
+      'scrolling': 'no'
+    });
   });
 
 }
