@@ -499,3 +499,13 @@ class Consolidate extends Gdn_Plugin {
    
     
 }
+les as $File) {
+         if (substr($File, -1) != '/')
+            unlink($File);
+      }
+      
+      $this->ChunkedFiles(array(), TRUE);
+   }
+   
+    
+}
