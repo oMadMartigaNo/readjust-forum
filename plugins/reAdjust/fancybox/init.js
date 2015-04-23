@@ -1,3 +1,10 @@
+/**
+ * Fancybox initialization
+ *
+ * Uses MutationObserver to watch for resized images before
+ * firing Fancybox
+ */
+
 function fancyMeSomeBox() {
 
   var $fancyImg = $('.ImageResized').prev('a');
