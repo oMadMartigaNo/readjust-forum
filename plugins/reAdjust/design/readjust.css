@@ -72,3 +72,10 @@ blockquote.Quote {
   margin-bottom: 0.5em !important;
 }
 
+/**
+ * Customize Quotes plugin layout
+ */
+.Reactions {
+  text-align: right;
+}
+

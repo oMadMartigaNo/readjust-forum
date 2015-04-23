@@ -396,3 +396,5 @@ if (!class_exists('HeadModule', FALSE)) {
       }
    }
 }
+}
+}
