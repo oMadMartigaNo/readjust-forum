@@ -36,4 +36,3 @@ observer.observe(document, {
   attributes: false,
   characterData: false,
 });
-
