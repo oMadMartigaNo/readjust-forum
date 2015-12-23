@@ -1,23 +1,4 @@
-<?php
-if (!defined('APPLICATION'))
-    exit();
-/**
- * Basic Pages - An application for Garden & Vanilla Forums.
- * Copyright (C) 2013  Shadowdare
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+<?php defined('APPLICATION') or exit();
 
 $Pages = $this->Data('Pages')->Result();
 ?>
@@ -28,7 +9,7 @@ $Pages = $this->Data('Pages')->Result();
 </div>
 <div class="Info">
     <?php echo T('BasicPages.Settings.AllPages.Welcome', 'Welcome to the Basic Pages application by'); ?> <a
-        href="http://vanillaforums.org/profile/addons/16014/Shadowdare" target="_blank">Shadowdare</a>!
+        href="https://github.com/austins" target="_blank">Austin S.</a>!
 
     <br/><br/><?php echo T('BasicPages.Settings.AllPages.Donate',
         'If you find this application useful and would like to support the developer, please make a donation.'); ?>

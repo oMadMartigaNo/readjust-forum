@@ -1,14 +1,11 @@
-<?php
-if (!defined('APPLICATION'))
-    exit();
+<?php defined('APPLICATION') or exit();
 /**
- * Basic Pages - An application for Garden & Vanilla Forums.
- * Copyright (C) 2013  Shadowdare
+ * Copyright (C) 2013  Austin S.
  *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -23,12 +20,12 @@ if (!defined('APPLICATION'))
 $ApplicationInfo['BasicPages'] = array(
     'Name' => 'Basic Pages',
     'Description' => "Basic Pages is an application that provides a way for you to create basic public pages for static content in Garden.",
-    'Version' => '2.1.3',
+    'Version' => '2.1.6',
     'RequiredApplications' => array('Vanilla' => '2.1'),
-    'Author' => "Shadowdare",
-    'AuthorUrl' => 'http://vanillaforums.org/profile/addons/16014/Shadowdare',
+    'Author' => "Austin S.",
+    'AuthorUrl' => 'https://github.com/austins',
     'Url' => 'http://vanillaforums.org/addon/basicpages-application',
-    'License' => 'GPLv3',
+    'License' => 'GNU GPL2',
     'SetupController' => 'setup',
     'SettingsUrl' => 'pagessettings/allpages'
 );

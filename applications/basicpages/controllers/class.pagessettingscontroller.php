@@ -1,14 +1,11 @@
-<?php
-if (!defined('APPLICATION'))
-    exit();
+<?php defined('APPLICATION') or exit();
 /**
- * Basic Pages - An application for Garden & Vanilla Forums.
- * Copyright (C) 2013  Shadowdare
+ * Copyright (C) 2013  Austin S.
  *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -152,10 +149,6 @@ class PagesSettingsController extends Gdn_Controller {
         $this->AddJsFile('jquery-ui.js');
         $this->AddJsFile('jquery.autogrow.js');
         $this->AddJsFile('pagessettings-newpage.js');
-
-        // Temporary fix for loading ButtonBar CSS file if ButtonBar is enabled.
-        if (Gdn::PluginManager()->CheckPlugin('ButtonBar'))
-            $this->AddCssFile('buttonbar.css', 'plugins/ButtonBar');
 
         // Prep Model
         $this->Form->SetModel($this->PageModel);
