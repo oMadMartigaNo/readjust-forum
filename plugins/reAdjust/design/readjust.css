@@ -1,4 +1,11 @@
 /**
+ * Override body font (to use sexy, sexy Avenir!)
+ */
+html body {
+  font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+/**
  * Set max-width to all inline/block content objects
  */
 .Message img,
